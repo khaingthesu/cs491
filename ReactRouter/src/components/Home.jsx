@@ -5,7 +5,7 @@ import welcomeAnimation from '../assets/welcome.json';
 import './Home.css';
 
 function Home() {
-    const [info, setInfo] = useState("WELCOME TO REACT ROUTER DEMO");
+    const [info, setInfo] = useState("WELCOME TO Home Page");
 
     return (
         <Container className="home-container py-5">

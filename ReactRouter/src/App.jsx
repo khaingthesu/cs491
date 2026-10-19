@@ -1,6 +1,5 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { BrowserRouter, Link, Route, Routes } from "react-router";
-
 import About from "./components/About";
 import Home from "./components/Home";
 import Users from "./components/Users";
