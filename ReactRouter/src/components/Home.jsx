@@ -17,9 +17,10 @@ function Home() {
 
                     <div className="animation-container" aria-hidden="true">
                         <Lottie
-                            animationData={welcomeAnimation}
+                            src={welcomeAnimation}
                             loop
                             autoplay
+                            style={{ width: '100%', height: '100%' }}
                         />
                     </div>
 
