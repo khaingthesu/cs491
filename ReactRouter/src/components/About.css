@@ -1,0 +1,18 @@
+#about{
+    items-align: center;
+    text-align: center;
+    margin-top: 5%;
+    background-color: black;
+    font-size: 40px;
+    font-weight: bold;
+    font-color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+#info{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: white;
+}

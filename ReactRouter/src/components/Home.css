@@ -1,0 +1,26 @@
+.home-container {
+    min-height: calc(100vh - 56px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-card {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 15px;
+    border: 0;
+    padding: 1.5rem;
+}
+
+.animation-container {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 1rem;
+}
+
+#info {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #343a40;
+}

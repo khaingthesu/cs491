@@ -1,0 +1,23 @@
+{
+  "name": "paddle-ball-game",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Spec-driven Breakout-style paddle-ball game built with React + Vite + Canvas",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.3.4",
+    "vite": "6.0.7",
+    "vitest": "2.1.8"
+  }
+}

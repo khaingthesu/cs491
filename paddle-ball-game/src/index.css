@@ -1,0 +1,129 @@
+:root {
+  color-scheme: dark;
+  --bg: #020617;
+  --fg: #e2e8f0;
+  --accent: #fbbf24;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+#root {
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  width: 100%;
+}
+
+.game-wrap {
+  position: relative;
+  width: min(90vw, 800px);
+  aspect-ratio: 800 / 600;
+}
+
+.game-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  touch-action: none;
+  cursor: none;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(2, 6, 23, 0.72);
+  border-radius: 12px;
+  backdrop-filter: blur(2px);
+}
+
+.overlay-card {
+  text-align: center;
+  padding: 28px 36px;
+  max-width: 90%;
+}
+
+.overlay-card h2 {
+  margin: 0 0 8px;
+  font-size: clamp(28px, 5vw, 44px);
+}
+
+.overlay-card p {
+  margin: 6px 0;
+  opacity: 0.85;
+}
+
+.overlay-card .hint {
+  font-size: 13px;
+  opacity: 0.65;
+}
+
+.overlay-card button {
+  margin-top: 16px;
+  padding: 10px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #020617;
+  background: var(--accent);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.08s ease;
+}
+
+.overlay-card button:hover {
+  transform: translateY(-1px);
+}
+
+.overlay-card button:active {
+  transform: translateY(0);
+}
+
+.controls-note {
+  font-size: 13px;
+  opacity: 0.6;
+  margin: 0;
+}
+
+.app-footer {
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.app-footer code {
+  font-size: 11px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .overlay {
+    backdrop-filter: none;
+  }
+  .overlay-card button {
+    transition: none;
+  }
+}
